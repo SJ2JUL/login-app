@@ -1,0 +1,11 @@
+<div class="login-container">
+  <ng-container *ngIf="!isLoginSuccess">
+    <lib-login-with-dynamic-form [fieldList]="fieldList" [buttonLabel]="'Login'" (formSubmit)="onSubmit($event)">
+    </lib-login-with-dynamic-form>
+    <a [routerLink]="['/login/mobile']">Login With Mobile</a>
+  </ng-container>
+  <ng-container *ngIf="isLoginSuccess">
+    <div class="login-status">Login Successful with Email.</div>
+    <a [routerLink]="['/login/mobile']">Login With Mobile</a>
+  </ng-container>
+</div>

@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background: linear-gradient(to right top, #6588df, #6cdbeb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+
+  a {
+    color: white;
+    margin-top: 1rem;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+  }
+}
